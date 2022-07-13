@@ -13,6 +13,7 @@ import { padding } from "@mui/system";
 // 4. Think of lines 14-23 as a loop. For each todo in the todo list, we want to give the list item
 // a key, and it's own card shown in the UI
 const Todos = ({ todos }) => {
+  deleteTodo
   const todoList = todos.length ? (
     todos.map((todo) => {
       return (
@@ -22,7 +23,9 @@ const Todos = ({ todos }) => {
             AddTodo.js. All we need to do is return the todo list item {todo.content} */}
             
             <ListItemButton component="a" href="#simple-list">
-              <Checkbox style={{paddingLeft:0}} color={primary} ></Checkbox>
+              <Checkbox onClick={deleteTodo(this.id)} style={{paddingLeft:0}} color={primary} >
+                
+              </Checkbox>
               <ListItemText primary={todo.content} secondary={Date}/>
             </ListItemButton>
           </Card>
