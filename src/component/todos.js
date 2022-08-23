@@ -1,6 +1,6 @@
 import React from "react";
 import "../component/todos.css";
-import Checkbox from "@mui/material";
+import {Checkbox} from "@mui/material";
 import { Card, CardContent, Grid } from "@mui/material";
 import {ListItemButton, ListItemText} from "@mui/material";
 import { padding } from "@mui/system";
